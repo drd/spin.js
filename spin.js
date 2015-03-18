@@ -15,6 +15,10 @@
 }
 (this, function() {
   "use strict";
+  
+  if (typeof document === 'undefined') {
+    return;
+  }
 
   var prefixes = ['webkit', 'Moz', 'ms', 'O'] /* Vendor prefixes */
     , animations = {} /* Animation rules keyed by their name */
